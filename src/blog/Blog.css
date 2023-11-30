@@ -1,0 +1,61 @@
+.blog-container {
+    max-width: 1200px; /* Optimal reading width */
+    margin: auto; /* Center the container */
+    background-color: #fff; /* Clean white background */
+    padding: 20px;
+    border-radius: 10px; /* Soften the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.blog-card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Elevation shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    overflow: hidden; /* Ensures content fits within rounded corners */
+}
+
+.blog-card:hover {
+    transform: translateY(-5px); /* Raise effect on hover for interactivity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.blog-card-title-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Title link color */
+}
+
+.blog-card-title-link:hover {
+    text-decoration: underline; /* Underline on hover for link */
+}
+
+.blog-card-title {
+    font-size: 1.5rem; /* Larger and more prominent title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.blog-card-text {
+    font-size: 1rem; /* Comfortable reading size for text */
+    color: #343a40; /* Darker color for better readability */
+}
+
+.blog-card-text::after {
+    content: '...'; /* Visual cue for truncated text */
+}
+
+.text-muted {
+    font-size: 0.85rem; /* Smaller size for metadata */
+    display: block; /* Block display for better layout */
+    margin-top: 10px; /* Space above the date */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 15px;
+    }
+
+    .blog-card-title {
+        font-size: 1.25rem;
+    }
+}
