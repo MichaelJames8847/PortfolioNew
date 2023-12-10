@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { VideoModal } from "../modal/DemoModal";
+import "./Project.css"
 
 export default function ProjectCard({ project }) {
     const [showModal, setShowModal] = useState(false);
 
     const handleOpenModal = () => setShowModal(true);
     const handleCloseModal = () => setShowModal(false);
-
-    const gifUrl = "https://cdn.loom.com/sessions/thumbnails/8cefd393719347a28ee318e221b7b386-with-play.gif";
 
     return (
         <div className="project-card">
@@ -16,13 +15,13 @@ export default function ProjectCard({ project }) {
             <p>{project.description}</p>
             <div className="project-details">
                 <span>Began: {new Date(project.startDate).toLocaleDateString()}</span>
-                <span>Finished: {project.endDate ? new Date(project.completionDate).toLocaleDateString() : 'Ongoing'}</span>
+                <span>Finished: {new Date(project.completionDate).toLocaleDateString()}</span>
             </div>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Github Repo</a>
 
             {project.demo && (
                 <img
-                    src={gifUrl}
+                    src={project.gifUrl}
                     alt="Demo Thumbnail"
                     className="demo-thumbnail"
                     onClick={handleOpenModal}

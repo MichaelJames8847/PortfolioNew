@@ -15,9 +15,13 @@ export default function Blogs() {
                                 <Link to={`/blog/${b.id}`} className="blog-card-title-link">
                                     <CardTitle tag="h5" className="blog-card-title">{b.title}</CardTitle>
                                 </Link>
-                                <CardText className="blog-card-text">{b.content.substring(0, 100)}...</CardText>
+                                <CardText className="blog-card-text">
+                                    {b.content.substring(0, 100)}...
+                                </CardText>
                                 <CardText>
-                                    <small className="text-muted">Posted on: {new Date(b.postDate).toLocaleDateString()}</small>
+                                    <small className="text-muted">
+                                        Posted on: {new Date(b.postDate).toLocaleDateString()}
+                                    </small>
                                 </CardText>
                             </CardBody>
                         </Card>

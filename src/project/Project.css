@@ -14,6 +14,8 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Organize content in a column */
 }
 
 .project-card .project-image {
@@ -23,17 +25,18 @@
 }
 
 .project-card h3 {
-    margin: 10px;
+    margin: 10px 10px 0 10px;
 }
 
 .project-card p {
     margin: 10px;
+    flex-grow: 1; /* Allows the paragraph to fill available space */
 }
 
 .project-card .project-details {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 10px;
     font-size: 0.9em;
     color: #666;
 }
@@ -41,12 +44,34 @@
 .project-card .btn {
     margin: 10px;
     text-decoration: none;
-    /* Add button styling */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 8px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Makes the button take the full width */
+    text-align: center; /* Center text inside button */
 }
 
 .project-card .project-status {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    /* Add more styling as needed */
+    background-color: #f8f9fa; /* Light background for status */
+    border-top: 1px solid #ccc; /* Border to separate from content */
+}
+
+.demo-thumbnail {
+    width: 100%; /* Full width for demo thumbnail */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Additional styles for hover effects */
+.project-card .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }

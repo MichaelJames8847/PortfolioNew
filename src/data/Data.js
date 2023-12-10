@@ -100,9 +100,10 @@ export const projects = [
         completionDate: new Date("2023-07-12"),
         link: "https://github.com/MichaelJames8847/Omni-Arena-Capstone.git",
         image: "https://i.kym-cdn.com/photos/images/newsfeed/000/993/683/3bc.jpg",
-        demo: null,
+        demo: "https://www.loom.com/embed/7732907de74e4caa9af69daac9b3fa3c?sid=ea023078-fd44-4291-82c3-73109200635e",
         skills: [1, 2, 3, 4, 5],
-        technologies: [3, 4, 5, 6]
+        technologies: [3, 4, 5, 6],
+        gifUrl: "https://cdn.loom.com/sessions/thumbnails/7732907de74e4caa9af69daac9b3fa3c-with-play.gif"
     },
     {
         id: 2,
@@ -118,7 +119,8 @@ export const projects = [
         image: "https://offloadmedia.feverup.com/secretchicago.com/wp-content/uploads/2021/04/23044226/Gaming-Lounge-1024x554.jpg",
         demo: "https://www.loom.com/embed/8cefd393719347a28ee318e221b7b386?sid=fb253bdd-f47f-4078-8945-9e2ded4870f8",
         skills: [1, 2, 3, 4, 5],
-        technologies: [1, 2, 3, 4, 5, 7, 8, 9]
+        technologies: [1, 2, 3, 4, 5, 7, 8, 9],
+        gifUrl: "https://cdn.loom.com/sessions/thumbnails/8cefd393719347a28ee318e221b7b386-with-play.gif"
     }
 ]
 

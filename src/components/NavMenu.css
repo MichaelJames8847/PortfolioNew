@@ -1,47 +1,43 @@
 /* NavMenu.css */
-.navbar {
-    background-color: #343a40; /* Dark background for navbar */
-    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
-}
+.navbar-main {
+    background-color: #282c34; /* Darker background */
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertical alignment */
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-main .navbar-brand {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  .navbar-main .nav-link {
+    color: #007bff;
+    margin-right: 25rem; /* Space between links */
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .navbar-main .nav-link:hover, .navbar-main .nav-link:focus {
+    color: #adb5bd;
+  }
+  
+  .navbar-main .active {
+    color: #007bff;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 25rem;
+  }
 
-.navbar-brand {
-    color: #ffffff; /* Light text color for better contrast */
-    font-size: 1.5rem; /* Slightly larger font size for brand name */
-    font-weight: bold; /* Bold font for brand name */
-    text-transform: uppercase; /* Uppercase for a modern look */
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
-}
+ .navbar-main .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
 
-.navbar-brand:hover, .navbar-brand:focus {
-    color: #f8f9fa; /* Slightly lighter color on hover */
-    text-decoration: none; /* Remove underline on hover */
-}
-
-.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1); /* Light border color for toggler */
-}
-
-.navbar-nav .nav-link {
-    color: #f8f9fa; /* Light text color for nav items */
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
-}
-
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-    color: #adb5bd; /* Slightly lighter color on hover */
-}
-
-/* Media query for larger screens */
-@media (min-width: 768px) {
-    .navbar-expand-sm {
-        flex-flow: row nowrap; /* Row direction for nav items */
-        justify-content: space-between; /* Space out brand and nav items */
-    }
-
-    .navbar-nav {
-        flex-direction: row; /* Row direction for nav items */
-    }
-
-    .nav-item {
-        padding: 0 1rem; /* Horizontal padding for nav items */
-    }
-}
+ .navbar-main .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+ }
