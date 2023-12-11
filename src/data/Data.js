@@ -4,21 +4,21 @@ export const userData = {
     bio: `Former Executive Chef turned Full Stack Web Developer. My journey in the culinary world
     spanned 15 years, starting as a humble dishwasher and culminating in a leadership role at 
     BJ's Restaurant and Brewhouse, of where I housed 8 years of my professional work life.
-    This path taught me the essence of hard work, teamwork, and the art of managing high-pressure situations.
+    This path taught me the essence of hard work, teamwork, and the art of managing high-pressure situations.\n\n
     
     In May 2023, I embarkned on a new adventure, driven by my passion for technology and problem-solving.
     I joined the Full Time, Full Stack Web Development Cohort-65 at Nashville Software School(NSS), where I
     honed my skills in Javascript(JS), React.js, C#, ASP.NET, and so many more. This intensive program not only
-    equipped me with technical skills, but also deepened my ability to think logically and creatively.
+    equipped me with technical skills, but also deepened my ability to think logically and creatively.\n\n
     
     Beyond coding and cooking, I'm an avid gamer and a musician at heart. You'll often find me lost in the
     world of games or expressing myself through the strings of a guitar, the beats of drums, or belting away
     in the microphone. This blend of creativity and technical acumen is what I bring to the world of
-    web development.
+    web development.\n\n
     
     As I transition into this exciting industry, I'm eagerly seeking opportunities to contribute, grow,
     and collaborate. I am passionate about creating impactful, user-friendly applications and am constantly
-    exploring new technologies and apporaches to enhance my skills.
+    exploring new technologies and apporaches to enhance my skills.\n\n
     
     Thank you for visiting my portfolio. Dive in to see the projects that showcase my journey from kitchens to code,
     and feel free to reach out if you think my skills and passions align with your needs.`,
@@ -32,38 +32,38 @@ export const blogs = [
     {
         id: 1,
         title: "Embracing the Journey: A Blend of Coding and Creativity",
-        content: `Welcome to my first blog post!
+        content: `Welcome to my first blog post!\n\n
     Today, I embark on a new journey - one that intertwines my passion for coding with my love for creativity. 
     As a software engineer, I've always been fascinated by the way programming languages can create something out of nothing, 
     turning lines of code into functional and impactful applications. 
-    But there's more to me than just my profession.
+    But there's more to me than just my profession.\n\n
 
-    Music: My Melodic Escape
+    Music: My Melodic Escape\n\n
     Music has always been my sanctuary. 
     Whether I'm strumming the guitar or getting lost in the rhythmic beats of drums, 
     it's where I find peace. It's not just a hobby; it's a part of who I am. 
     It influences how I think and solve problems. 
     The creativity and discipline I learn from music often spill over into my coding, 
-    bringing a sense of rhythm and flow to my work.
+    bringing a sense of rhythm and flow to my work.\n\n
 
-    Gaming: The Virtual Odyssey
+    Gaming: The Virtual Odyssey\n\n
     I'm an avid gamer, and gaming is where I turn to when I need a break from the world. It's fascinating to see 
     how intricate designs and complex storylines come together to create immersive experiences. 
-    As a developer, I draw inspiration from these virtual worlds, reminding myself of the importance of user experience and engagement.
+    As a developer, I draw inspiration from these virtual worlds, reminding myself of the importance of user experience and engagement.\n\n
 
-    Fitness: Balancing the Mind and Body
+    Fitness: Balancing the Mind and Body\n\n
     Maintaining a balance between the mind and body is crucial. 
     For me, fitness is not just about physical health but mental well-being. Hitting the gym or going for a run 
     clears my mind and prepares me for the challenges ahead. 
-    It's during these moments of clarity that some of my best ideas come to life.
+    It's during these moments of clarity that some of my best ideas come to life.\n\n
 
-    The Journey Ahead
+    The Journey Ahead\n\n
     As I continue on this path, I aim to bring together these diverse elements - 
     the logic of code, the creativity of music, the engagement of gaming, and the discipline of fitness - 
-    to create something unique. In this blog, I'll share my experiences, challenges, and learnings in software development and beyond.
+    to create something unique. In this blog, I'll share my experiences, challenges, and learnings in software development and beyond.\n\n
 
     From exploring new programming languages and technologies to delving into web development, UI/UX design, and project management, 
-    I'll document it all here. I hope to connect with like-minded individuals, learn from this community, and grow as both a developer and a person.
+    I'll document it all here. I hope to connect with like-minded individuals, learn from this community, and grow as both a developer and a person.\n\n
 
     So, stay tuned, and let's embark on this journey together!`,
         postDate: new Date("2023-11-08"),

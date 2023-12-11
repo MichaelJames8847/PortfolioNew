@@ -3,6 +3,10 @@ import { userData } from "../data/Data";
 import "./UserProfile.css"
 
 export default function UserProfile() {
+    const bioParagraphs = userData.bio.split('\n\n').map((paragraph, index) => (
+        <p key={index} className="profile-bio">{paragraph}</p>
+    ));
+
     return (
         <Container className="user-profile-view py-5">
             {userData && (
@@ -14,7 +18,7 @@ export default function UserProfile() {
                         <Card className="profile-card">
                             <CardBody>
                                 <h1 className="profile-name">{userData.name}</h1>
-                                <p className="profile-bio">{userData.bio}</p>
+                                {bioParagraphs}
                                 <p className="profile-detail">Email: {userData.email}</p>
                                 <p className="profile-detail">Phone: {userData.phoneNumber}</p>
                                 <p className="profile-detail">LinkedIn: <a href={userData.linkedIn} target="_blank" rel="noopener noreferrer">{userData.linkedIn}</a></p>
@@ -25,5 +29,5 @@ export default function UserProfile() {
                 </Row>
             )}
         </Container>
-    )
+    );
 }
