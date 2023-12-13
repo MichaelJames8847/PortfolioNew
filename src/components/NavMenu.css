@@ -1,43 +1,41 @@
 /* NavMenu.css */
 .navbar-main {
-    background-color: #282c34; /* Darker background */
-    display: flex; /* Enable Flexbox */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertical alignment */
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-main .navbar-brand {
-    color: #007bff;
-    font-weight: bold;
-    font-size: 1.4rem;
-  }
-  
-  .navbar-main .nav-link {
-    color: #007bff;
-    margin-right: 25rem; /* Space between links */
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  .navbar-main .nav-link:hover, .navbar-main .nav-link:focus {
-    color: #adb5bd;
-  }
-  
-  .navbar-main .active {
-    color: #007bff;
-    font-weight: bold;
-    align-items: center;
-    margin-right: 25rem;
-  }
+  background-color: #282c34; /* Darker background */
+  padding: 0.5rem 1rem;
+}
 
- .navbar-main .container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
+.navbar-main .navbar-brand {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
 
- .navbar-main .navbar-nav {
-    display: flex;
-    justify-content: space-between;
- }
+.navbar-main .nav-link {
+  color: #007bff;
+  margin-right: 1rem; /* Adjust spacing */
+  font-weight: bold;
+}
+
+.navbar-main .nav-link:hover, .navbar-main .nav-link:focus {
+  color: #adb5bd;
+}
+
+.navbar-main .active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar-main {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar-main .nav-link, .navbar-main .active {
+      margin-right: 0;
+      padding: 0.25rem 0;
+  }
+  .navbar-main .navbar-nav {
+      width: 100%;
+      justify-content: flex-start;
+  }
+}
